@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class SoftAssertionsTests {
 
     @BeforeAll
-    static void beforeAll() {
+    static void BeforeAll() {
         Configuration.browserSize = "1920x1080";
         Configuration.pageLoadStrategy = "eager";
 
