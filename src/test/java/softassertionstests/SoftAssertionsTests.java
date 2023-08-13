@@ -11,14 +11,14 @@ import static com.codeborne.selenide.Selenide.*;
 public class SoftAssertionsTests {
 
     @BeforeAll
-    static void BeforeAll() {
+    static void beforeAll() {
         Configuration.browserSize = "1920x1080";
         Configuration.pageLoadStrategy = "eager";
 
     }
 
     @Test
-    void SearchSelenideTest() {
+    void searchSelenideTest() {
         open("https://github.com");
         $(".search-input").click();
         $("#query-builder-test").setValue("Selenide").pressEnter();
